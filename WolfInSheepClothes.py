@@ -98,7 +98,10 @@ if wolf == 1:
 if wolf != 1:
     confirm1 = input(f"{player1} Do you wish to view your role? (y/n): ")
     if confirm1 == "y":
-        print(f"{player1}you are a sheep. The word is", word())
+        print(f"{player1} you are a sheep. The word is", word())
+viewed1 = input("Have you seen you role? y/n")
+if viewed1 == "y":
+    print("\n"*100)
 if wolf == 2:
     confirm2 = input(f"{player2} Do you wish to view your role? (y/n): ")
     if confirm2 == "y":
@@ -106,7 +109,10 @@ if wolf == 2:
 if wolf != 2:
     confirm2 = input(f"{player2} Do you wish to view your role? (y/n): ")
     if confirm2 == "y":
-        print(f"{player1} you are a sheep. The word is", word())
+        print(f"{player2} you are a sheep. The word is", word())
+viewed2 = input("Have you seen you role? y/n")
+if viewed2 == "y":
+    print("\n"*100)
 if wolf == 3:
     confirm3 = input(f"{player3} Do you wish to view your role? (y/n): ")
     if confirm3 == "y":
@@ -115,7 +121,9 @@ if wolf != 3:
     confirm3 = input(f"{player3} Do you wish to view your role? (y/n): ")
     if confirm3 == "y":
         print(f"{player3} you are a sheep. The word is", word())
-
+viewed3 = input("Have you seen you role? y/n")
+if viewed3 == "y":
+    print("\n"*100)
 
 
 
