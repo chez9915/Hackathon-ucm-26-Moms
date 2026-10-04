@@ -43,19 +43,33 @@ randArtistHint = randArtist
 
 print(f"The Category is: {CATEGORY[randCat]}")
 
+def word():
+    if randCat == 0:
+        print(f"The word is:  {PLACE[randPlace]} ")
+        print(f"The hint is: {PHINTS[randPlaceHint]} ")
 
-if randCat == 0:
-    print(f"The word is:  {PLACE[randPlace]} ")
-    print(f"The hint is: {PHINTS[randPlaceHint]} ")
 
 
-elif randCat == 1:
-    print(f"The word is:  {ANIMAL[randAnimal]} ")
-    print(f"The hint is: {AHINTS[randAnimalHint]} ")
+    elif randCat == 1:
+        print(f"The word is:  {ANIMAL[randAnimal]} ")
+        print(f"The hint is: {AHINTS[randAnimalHint]} ")
 
-elif randCat == 2:
-    print(f"The word is:  {ARTIST[randArtist]} ")
-    print(f"The hint is: {ARTHINTS[randArtistHint]} ")
+    elif randCat == 2:
+        print(f"The word is:  {ARTIST[randArtist]} ")
+        print(f"The hint is: {ARTHINTS[randArtistHint]} ")
+
+def hint():
+    if randCat == 0:
+        print(f"The hint is: {PHINTS[randPlaceHint]} ")
+
+
+
+    elif randCat == 1:
+        print(f"The hint is: {AHINTS[randAnimalHint]} ")
+
+    elif randCat == 2:
+        print(f"The hint is: {ARTHINTS[randArtistHint]} ")
+
 
 
 

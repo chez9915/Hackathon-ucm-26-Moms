@@ -1,10 +1,16 @@
+"""
 import pygame
 import sys
+import pygame_gui
+
 
 pygame.init()
 
 screen = pygame.display.set_mode((720, 720))
 pygame.display.set_caption("Start Menu")
+
+clock = pygame.time.Clock()
+MANAGER = pygame_gui.UIManager(WIDTH, HEIGHT)
 
 WHITE = (255,255,255)
 LIGHT = (170,170,170)
@@ -64,3 +70,4 @@ def start_menu():
         pygame.display.update()
 
 start_menu()
+"""
