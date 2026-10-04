@@ -3,9 +3,10 @@ import random
 
 from ast import Global
 import random
-
+from PIL import Image
 from unicodedata import category
-
+im = Image.open("C:/Users/Aiden/Downloads/wolf_in_sheep.jpg")
+im.show()
 PLACE = ["Missouri" ,"Rome" , "Paris" , "Italy" , "DC", "Egypt"]
 PHINTS = ["Show me", "Ceaser", "Tower", "Boot", "President", "Desert"]
 
