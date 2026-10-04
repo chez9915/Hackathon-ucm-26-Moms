@@ -89,21 +89,80 @@ if (num_players > 7) or (num_players == 7):
 
 wolf = random.randint(1, num_players)
 
-def RoleAssign():
+def WolfAssign():
     if wolf == 1:
         confirm = input(f"{player1}, Do you wish to view your role? (y/n): ")
         if confirm == "y":
             print("you are the wolf. Your hint is", hint())
-            os.system("cls")
-    else:
-        confirm = input(f"{player1}, Do you wish to view your role? (y/n): ")
+            print("\n"*100)
+    elif wolf == 2:
+        confirm = input(f"{player2}, Do you wish to view your role? (y/n): ")
         if confirm == "y":
-            print("you are a sheep. The word is", word())
-            os.system("cls")
+            print("you are the wolf. Your hint is", hint())
+            print("\n"*100)
+    elif wolf == 3:
+        confirm = input(f"{player3}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            print("\n"*100)
+    elif wolf == 4:
+        confirm = input(f"{player4}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            print("\n"*100)
+    elif wolf == 5:
+        confirm = input(f"{player5}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            print("\n"*100)
+    elif wolf == 6:
+        confirm = input(f"{player6}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            print("\n"*100)
+
+def SheepAssign():
+    if wolf != player1:
+      player1Answer = print(input(f"{player1},Are you ready to view your role? (y/n): "))
+    if player1Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
+    if wolf != player2:
+      player2Answer = print(input(f"{player2},Are you ready to view your role? (y/n): "))
+    if player2Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
+    if wolf != player3:
+      player3Answer = print(input(f"{player3},Are you ready to view your role? (y/n): "))
+    if player3Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
+    if wolf != player4:
+      player4Answer = print(input(f"{player4},Are you ready to view your role? (y/n): "))
+    if player4Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
+    if wolf != player5:
+      player5Answer = print(input(f"{player5},Are you ready to view your role? (y/n): "))
+    if player5Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
+    if wolf != player6:
+      player6Answer = print(input(f"{player6},Are you ready to view your role? (y/n): "))
+    if player6Answer == "y":
+        print("You are a sheep the word is , word())")
+        print("\n" * 100)
 
 
 
-RoleAssign()
+
+
+
+
+
+
+
+WolfAssign()
 
 
 
@@ -115,4 +174,66 @@ RoleAssign()
 for i in range(0, players):
     player = (input("Enter your name: "))
     print(player)
+"""
+"""
+    if wolf == 1:
+        confirm = input(f"{player1}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    elif wolf > 1:
+        confirm = input(f"{player1}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are a sheep. The word is", word())
+            os.system("cls")
+    elif wolf == 2:
+        confirm = input(f"{player2}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    elif wolf > 2:
+        confirm = input(f"{player1}, Do you wish to view your role? (y/n): ")
+    if confirm == "y":
+        print("you are a sheep. The word is", word())
+        os.system("cls")
+    elif wolf == 3:
+        confirm = input(f"{player3}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    elif wolf > 3:
+        confirm = input(f"{player3}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are a sheep. The word is", word())
+            os.system("cls")
+    elif wolf == 4:
+        confirm = input(f"{player4}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    elif wolf > 4:
+        confirm = input(f"{player4}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are a sheep. The word is", word())
+            os.system("cls")
+    elif wolf == 5:
+        confirm = input(f"{player5}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    elif wolf > 5:
+        confirm = input(f"{player5}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are a sheep. The word is", word())
+            os.system("cls")
+    elif wolf == 6:
+        confirm = input(f"{player6}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are the wolf. Your hint is", hint())
+            os.system("cls")
+    else:
+        confirm = input(f"{player6}, Do you wish to view your role? (y/n): ")
+        if confirm == "y":
+            print("you are a sheep. The word is", word())
+            os.system("cls")
 """
