@@ -28,17 +28,17 @@ randAnimalHint = randAnimal
 randArtist = random.randint(0,4)
 randArtistHint = randArtist
 
-print(f"The Category is: {CATEGORY[randCat]}")
+#print(f"The Category is: {CATEGORY[randCat]}")
 
 def word():
     if randCat == 0:
-        print(f"The word is:  {PLACE[randPlace]} ")
+        #print(f"The word is:  {PLACE[randPlace]} ")
         return f"The word is:  {PLACE[randPlace]} "
 
 
 
     elif randCat == 1:
-        print(f"The word is:  {ANIMAL[randAnimal]} ")
+        #print(f"The word is:  {ANIMAL[randAnimal]} ")
         return f"The word is:  {ANIMAL[randAnimal]} "
         print(f"The hint is: {AHINTS[randAnimalHint]} ")
 
@@ -48,17 +48,17 @@ def word():
 
 def hint():
     if randCat == 0:
-        print(f"The word is: {PLACE[randPlace]} ")
+        #print(f"The word is: {PLACE[randPlace]} ")
         return f"The hint is: {PHINTS[randPlaceHint]} "
 
 
 
     elif randCat == 1:
-        print(f"The word is: {ANIMAL[randAnimal]} ")
+        #print(f"The word is: {ANIMAL[randAnimal]} ")
         return f"The hint is: {AHINTS[randAnimalHint]} "
 
     elif randCat == 2:
-        print(f"The word is: {ARTIST[randArtist]} ")
+        #print(f"The word is: {ARTIST[randArtist]} ")
         return f"The hint is: {ARTHINTS[randArtistHint]} "
 
 
@@ -66,30 +66,30 @@ num_players = int(input("Enter number of players: "))
 
 if num_players > 1:
     player1 = (input("enter your name: "))
-    print(player1)
+    #print(player1)
 else:
         print("Invalid number")
 if (num_players > 2) or (num_players == 2):
     player2 = (input("Enter your name: "))
-    print(player2)
+    #print(player2)
 if (num_players > 3) or (num_players == 3):
     player3 = (input("Enter your name: "))
-    print(player3)
+    #print(player3)
 if (num_players > 4) or (num_players == 4):
     player4 = (input("Enter your name: "))
-    print(player4)
+    #print(player4)
 if (num_players > 5) or (num_players == 5):
     player5 = (input("Enter your name: "))
-    print(player5)
+    #print(player5)
 if (num_players > 6) or (num_players == 6):
     player6 = (input("Enter your name: "))
-    print(player6)
+    #print(player6)
 if (num_players > 7) or (num_players == 7):
     print("Too many players")
 
 wolf = random.randint(1, num_players)
 
-print(wolf)
+#print(wolf)
 
 if wolf == 1:
     confirm1 = input(f"{player1} Do you wish to view your role? (y/n): ")
@@ -110,7 +110,7 @@ if wolf != 2:
     confirm2 = input(f"{player2} Do you wish to view your role? (y/n): ")
     if confirm2 == "y":
         print(f"{player2} you are a sheep. The word is", word())
-viewed2 = input("Have you seen you role? y/n")
+viewed2 = input("Have you seen you role? y/n: ")
 if viewed2 == "y":
     print("\n"*100)
 if wolf == 3:
@@ -121,8 +121,19 @@ if wolf != 3:
     confirm3 = input(f"{player3} Do you wish to view your role? (y/n): ")
     if confirm3 == "y":
         print(f"{player3} you are a sheep. The word is", word())
-viewed3 = input("Have you seen you role? y/n")
+viewed3 = input("Have you seen you role? y/n: ")
 if viewed3 == "y":
+    print("\n"*100)
+if wolf == 4:
+    confirm4 = input(f"{player4} Do you wish to view your role? (y/n): ")
+    if confirm4 == "y":
+        print(f"you are the wolf. ", hint())
+if wolf != 4:
+    confirm4 = input(f"{player4} Do you wish to view your role? (y/n): ")
+    if confirm4 == "y":
+        print(f"{player4} you are a sheep. The word is", word())
+viewed4 = input("Have you seen you role? y/n: ")
+if viewed4 == "y":
     print("\n"*100)
 
 
