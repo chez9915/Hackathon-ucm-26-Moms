@@ -16,9 +16,15 @@ AHINTS = ["Claws", "Loyal","Ride", "Mud", "Flock", "Loner", "Mountain"]
 ARTIST = ["Green Day","Bad Bunny","Taylor Swift","Katseye", "Black Pink"]
 ARTHINTS = ["American Idiot", "Superbowl", "Eras","WILDWORD", "YG Entertainment"]
 
-CATEGORY = ["Place", "Animal", "Global_Artist"]
+FOOD = ["Mac and Cheese", "Burger", "Pizza", "Cookies"]
+FHINTS = ["Noodle", "Beef", "Pizza", "Baked"]
 
-randCat = random.randint(0,2)
+OBJECTS = ["Hair Brush", "Boots", "Book", "Castle"]
+OHINTS = ["Detangle", "Cowboy", "Page", "Royalty"]
+
+CATEGORY = ["Place", "Animal", "Global_Artist", "Food", "Object"]
+
+randCat = random.randint(0,4)
 
 randPlace = random.randint(0,5)
 randPlaceHint = randPlace
@@ -29,17 +35,23 @@ randAnimalHint = randAnimal
 randArtist = random.randint(0,4)
 randArtistHint = randArtist
 
-#print(f"The Category is: {CATEGORY[randCat]}")
+randFood = random.randint(0,3)
+randFoodHint = randFood
+
+randObject = random.randint(0,3)
+randObjectHint = randObject
+
+
+print(f"The Category is: {CATEGORY[randCat]}")
 
 def word():
     if randCat == 0:
-        #print(f"The word is:  {PLACE[randPlace]} ")
+        print(f"The word is:  {PLACE[randPlace]} ")
         return f"The word is:  {PLACE[randPlace]} "
 
 
-
     elif randCat == 1:
-        #print(f"The word is:  {ANIMAL[randAnimal]} ")
+        print(f"The word is:  {ANIMAL[randAnimal]} ")
         return f"The word is:  {ANIMAL[randAnimal]} "
         print(f"The hint is: {AHINTS[randAnimalHint]} ")
 
@@ -47,20 +59,36 @@ def word():
         return f"The word is:  {ARTIST[randArtist]} "
         print(f"The hint is: {ARTHINTS[randArtistHint]} ")
 
+    elif randCat == 3:
+        return f"The word is:  {FOOD[randFood]} "
+        print(f"The hint is: {FHINTS[randFoodHint]} ")
+
+    elif randCat == 4:
+        return f"The word is:  {OBJECTS[randObject]} "
+        print(f"The hint is: {OHINTS[randObjectHint]} ")
+
 def hint():
     if randCat == 0:
-        #print(f"The word is: {PLACE[randPlace]} ")
+        print(f"The word is: {PLACE[randPlace]} ")
         return f"The hint is: {PHINTS[randPlaceHint]} "
 
 
 
     elif randCat == 1:
-        #print(f"The word is: {ANIMAL[randAnimal]} ")
+        print(f"The word is: {ANIMAL[randAnimal]} ")
         return f"The hint is: {AHINTS[randAnimalHint]} "
 
     elif randCat == 2:
-        #print(f"The word is: {ARTIST[randArtist]} ")
+        print(f"The word is: {ARTIST[randArtist]} ")
         return f"The hint is: {ARTHINTS[randArtistHint]} "
+
+    elif randCat == 3:
+        print(f"The word is: {FOOD[randFood]} ")
+        return f"The hint is: {FHINTS[randFoodHint]} "
+
+    elif randCat == 4:
+        print(f"The word is: {OBJECTS[randObject]} ")
+        return f"The hint is: {OHINTS[randObjectHint]} "
 
 
 num_players = int(input("Enter number of players: "))
