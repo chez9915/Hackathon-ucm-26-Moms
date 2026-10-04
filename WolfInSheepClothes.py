@@ -92,14 +92,29 @@ wolf = random.randint(1, num_players)
 print(wolf)
 
 if wolf == 1:
-    confirm = input(f"{player1} Do you wish to view your role? (y/n): ")
-    if confirm == "y":
-        print(f"{player1},you are the wolf. Your hint is", hint())
-elif wolf != 1:
-    confirm = input(f"{player1} Do you wish to view your role? (y/n): ")
-    if confirm == "y":
+    confirm1 = input(f"{player1} Do you wish to view your role? (y/n): ")
+    if confirm1 == "y":
+        print(f"{player1} you are the wolf. ", hint())
+if wolf != 1:
+    confirm1 = input(f"{player1} Do you wish to view your role? (y/n): ")
+    if confirm1 == "y":
         print(f"{player1}you are a sheep. The word is", word())
-
+if wolf == 2:
+    confirm2 = input(f"{player2} Do you wish to view your role? (y/n): ")
+    if confirm2 == "y":
+        print(f"you are the wolf. ", hint())
+if wolf != 2:
+    confirm2 = input(f"{player2} Do you wish to view your role? (y/n): ")
+    if confirm2 == "y":
+        print(f"{player1} you are a sheep. The word is", word())
+if wolf == 3:
+    confirm3 = input(f"{player3} Do you wish to view your role? (y/n): ")
+    if confirm3 == "y":
+        print(f"you are the wolf. ", hint())
+if wolf != 3:
+    confirm3 = input(f"{player3} Do you wish to view your role? (y/n): ")
+    if confirm3 == "y":
+        print(f"{player3} you are a sheep. The word is", word())
 
 
 
